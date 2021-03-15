@@ -19,6 +19,6 @@ index <- which(coef != 0)
 actCoef <- coef[index]
 lasso=row.names(coef)[index]
 lasso=c("futime","fustat",lassoGene)
-lassoSig=rt[,lassoGene]
-lassoSig=cbind(id=row.names(lassoSigExp),lassoSigExp)
-write.table(lassoSig,file="lassoSig.txt",sep="\t",row.names=F,quote=F)
+lassoSi=rt[,lassoGene]
+lassoSi=cbind(id=row.names(lassoSigExp),lassoSigExp)
+write.table(lassoSi,file="lassoSig.txt",sep="\t",row.names=F,quote=F)
